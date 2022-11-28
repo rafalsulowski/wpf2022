@@ -1,0 +1,38 @@
+﻿<Window x:Class="wpf2022.LodDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf2022"
+        mc:Ignorable="d"
+        Title="LodDataWindow" Height="450" Width="800">
+    <Canvas>
+        <ListView Margin="10" Name="listview1" ScrollViewer.VerticalScrollBarVisibility="Visible"
+          ScrollViewer.CanContentScroll="False" MaxHeight="450">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nazwa" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Węzeł" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Typ" DisplayMemberBinding="{Binding Typ}" />
+                    <GridViewColumn Header="Uzad" DisplayMemberBinding="{Binding Vs}" />
+                    <GridViewColumn Header="Pl" DisplayMemberBinding="{Binding Pl}" />
+                    <GridViewColumn Header="Ql" DisplayMemberBinding="{Binding Ql}" />
+                    <GridViewColumn Header="Pg" DisplayMemberBinding="{Binding Pg}" />
+                    <GridViewColumn Header="Qg" DisplayMemberBinding="{Binding Qg}" />
+                    <GridViewColumn Header="Qmin" DisplayMemberBinding="{Binding Qmin}" />
+                    <GridViewColumn Header="Qmax" DisplayMemberBinding="{Binding Qmax}" />
+                    <GridViewColumn Header="Stan" DisplayMemberBinding="{Binding St}" />
+                    <GridViewColumn Header="Un" DisplayMemberBinding="{Binding Vn}" />
+                    <GridViewColumn Header="Umin" DisplayMemberBinding="{Binding Vmin}" />
+                    <GridViewColumn Header="Umax" DisplayMemberBinding="{Binding Vmax}" />
+                    <GridViewColumn Header="Obsz" DisplayMemberBinding="{Binding Comp}" />
+                    <GridViewColumn Header="ODM" DisplayMemberBinding="{Binding Area}" />
+                    <GridViewColumn Header="ZE" DisplayMemberBinding="{Binding Zone}" />
+                    <GridViewColumn Header="Reg" DisplayMemberBinding="{Binding Regn}" />
+                    <GridViewColumn Header="Ui" DisplayMemberBinding="{Binding Vi}" />
+                    <GridViewColumn Header="Di" DisplayMemberBinding="{Binding Di}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Canvas>
+</Window>

@@ -1,0 +1,90 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf2022"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="wpf2022.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Rectangle Height="235" Canvas.Left="269" Stroke="Black" Canvas.Top="39" Width="231" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Plik">
+                <MenuItem Header="_Czytaj dane">
+                    <MenuItem Header="_Format KDM" Click="ReadDataKdmClick" />
+                    <MenuItem Header="_Format EPC"/>
+                    <MenuItem Header="_Format IEN"/>
+                    <MenuItem Header="_Format BIN"/>
+                    <MenuItem Header="_Format UCTE"/>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Makro" Click="MakroClick" />
+                <Separator />
+                <MenuItem Header="_Inne akcje1" />
+                <MenuItem Header="_Inne akcje2" />
+                <MenuItem Header="_Inne akcje3" />
+                <Separator />
+                <MenuItem Header="_Exit" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Dane">
+                <MenuItem Header="_Węzły" Click="OpenNodeDataWindowClick"/>
+                <MenuItem Header="_Generatory" />
+                <MenuItem Header="_Odbiory" Click="OpenLodDataWindowClick"/>
+                <Separator />
+                <MenuItem Header="_Gałęzie" Click="OpenBranchDataWindowClick"/>
+                <MenuItem Header="_Linie" />
+                <MenuItem Header="_Charakterystyki monitorowane" Click="OpenLineCharacteristicDataWindowClick"/>
+                <MenuItem Header="_Transformatory" />
+                <Separator />
+                <MenuItem Header="_Obszary" />
+                <MenuItem Header="_Wytwarzanie" />
+                <MenuItem Header="_Wymiana" />
+                <Separator />
+                <MenuItem Header="_Inne akcje1" />
+                <MenuItem Header="_Inne akcje2" />
+                <MenuItem Header="_Inne akcje3" />
+            </MenuItem>
+            <MenuItem Header="_Obliczenia">
+                <MenuItem Header="_Rozpływ" />
+                <Separator />
+                <MenuItem Header="_GrafSym" />
+                <Separator />
+                <MenuItem Header="_Reguła N-1" />
+                <MenuItem Header="_Reguła N-X" />
+                <MenuItem Header="_Zwarcia" />
+                <Separator />
+                <MenuItem Header="_Ekwiwalent" />
+                <MenuItem Header="_inne akcje1" />
+                <MenuItem Header="_inne akcje2" />
+                <MenuItem Header="_inne akcje3" />
+            </MenuItem>
+            <MenuItem Header="_Wyniki"/>
+            <MenuItem Header="_Narzędzia"/>
+            <MenuItem Header="_Edytory"/>
+            <MenuItem Header="_Pomoc"/>
+            <MenuItem Header="_Test" Click="testClick"/>
+            <MenuItem Header="_Test DLL" Click="testClickDLL"/>
+        </Menu>
+
+        <Label x:Name="labShow1" Content="Czas otwierania okna= " Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="11"/>
+        <Label x:Name="labShow2" Content="Czas otwierania okna= " Canvas.Top="126" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="10"/>
+        <Label x:Name="labShow3" Content="Czas otwierania okna= " Canvas.Top="157" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="10"/>
+        <Label x:Name="labShow4" Content="Czas otwierania okna= " Canvas.Top="188" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="10"/>
+        <Label x:Name="labShow6" Content="Czas tworzenia listy= " Canvas.Top="228" Canvas.Left="1" Height="36" Width="114" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="labRead" Content="Czas wczytywania modelu KDM= " Canvas.Top="54" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-6" />
+        <Label x:Name="labConfirm" Content="aigle" Canvas.Top="23" Canvas.Left="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label x:Name="labShow7" Content="Czas czytania modelu= " Canvas.Top="95" Canvas.Left="275" HorizontalAlignment="Left" VerticalAlignment="Center" Height="48" Width="210"/>
+        <Label x:Name="labShow8" Content="Wynik sumy= " Canvas.Top="149" Canvas.Left="275" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" Width="210"/>
+        <Label x:Name="labShow9" Content="Czas pętli= " Canvas.Top="205" Canvas.Left="275" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" Width="210"/>
+        <Label Content="Pomiary dla zakładki Test" Canvas.Left="277" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Top" Height="47" Width="147"/>
+        <Rectangle Height="58" Canvas.Left="269" Stroke="Black" Canvas.Top="37" Width="231"/>
+        <Rectangle Height="237" Canvas.Left="533" Stroke="Black" Canvas.Top="37" Width="231" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="58" Canvas.Left="534" Stroke="Black" Canvas.Top="37" Width="230" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Pomiary dla zakładki test DLL" Canvas.Left="540" Canvas.Top="39" Height="47" Width="172"/>
+        <Label x:Name="labShow10" Content="Czas czytania modelu KDM= " Canvas.Top="95" Canvas.Left="540" HorizontalAlignment="Left" VerticalAlignment="Center" Height="48" Width="224"/>
+        <Label x:Name="labShow11" Content="Czas pętli= " Canvas.Top="149" Canvas.Left="540" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" Width="224"/>
+        <Label x:Name="labShow12" Content="Czas otwarcia okna= " Canvas.Top="205" Canvas.Left="540" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" Width="224"/>
+
+    </Canvas>
+</Window>

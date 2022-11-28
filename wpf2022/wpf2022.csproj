@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="devexpress.wpf.scheduling" Version="22.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Python.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Python310-32\Lib\site-packages\pythonnet\runtime\Python.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

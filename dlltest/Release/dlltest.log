@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  dllmain.cpp
+     Creating library C:\Users\01159502\source\repos\wpf2022\Release\dlltest.lib and object C:\Users\01159502\source\repos\wpf2022\Release\dlltest.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  dlltest.vcxproj -> C:\Users\01159502\source\repos\wpf2022\Release\dlltest.dll
